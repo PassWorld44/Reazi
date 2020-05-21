@@ -1,11 +1,6 @@
-
-namespace Reazi
-{
-	__declspec(dllimport) void print();
-}
-
+#include <Reazi.h>
 
 int main()
 {
-	Reazi::print();
+
 }
