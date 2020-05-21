@@ -12,5 +12,6 @@ namespace Reazi
 
 	void Application::run()
 	{
+		while (true);
 	}
 }

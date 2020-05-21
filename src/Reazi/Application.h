@@ -16,4 +16,7 @@ namespace Reazi
 		void run();
 	};
 
+	//To be defined in Client
+	Application* CreateApplication();
+
 }
