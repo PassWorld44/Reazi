@@ -1,0 +1,3 @@
+[submodule "Reazi/vendor/spdlog"]
+	path = Reazi/vendor/spdlog
+	url = https://github.com/gabime/spdlog
