@@ -10,8 +10,12 @@ namespace Reazi
 	{
 	}
 
-	void Application::run()
+	void Application::Run()
 	{
-		while (true);
+		bool stop = false;
+		while (!stop)
+		{
+
+		}
 	}
 }

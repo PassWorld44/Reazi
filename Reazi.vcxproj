@@ -59,6 +59,7 @@
       <PreprocessorDefinitions>RZ_PLATFORM_WINDOWS;RZ_BUILD_DLL; REAZI_BUILD_DLL_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp17</LanguageStandard>
+      <AdditionalIncludeDirectories>$(SolutionDir)Reazi\vendor\spdlog\include;</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -74,6 +75,7 @@
       <PreprocessorDefinitions>RZ_PLATFORM_WINDOWS;RZ_BUILD_DLL; REAZI_BUILD_DLLNDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp17</LanguageStandard>
+      <AdditionalIncludeDirectories>$(SolutionDir)Reazi\vendor\spdlog\include;</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -83,12 +85,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="src\Reazi\Log.h" />
     <ClInclude Include="src\Reazi.h" />
     <ClInclude Include="src\Reazi\Application.h" />
     <ClInclude Include="src\Reazi\Core.h" />
     <ClInclude Include="src\Reazi\EntryPoint.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\Reazi\Log.cpp" />
     <ClCompile Include="src\Reazi\Application.cpp" />
   </ItemGroup>
   <ItemGroup>

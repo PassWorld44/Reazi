@@ -30,9 +30,15 @@
     <ClInclude Include="src\Reazi\EntryPoint.h">
       <Filter>Fichiers d%27en-tête</Filter>
     </ClInclude>
+    <ClInclude Include="src\Reazi\Log.h">
+      <Filter>Fichiers d%27en-tête</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Reazi\Application.cpp">
+      <Filter>Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Reazi\Log.cpp">
       <Filter>Fichiers sources</Filter>
     </ClCompile>
   </ItemGroup>

@@ -1,10 +1,11 @@
 #pragma once
+#pragma once
 
-// For use by Reazi appplication
+// For use by Hazel applications
 
-//the app
 #include "Reazi/Application.h"
+#include "Reazi/Log.h"
 
-//------------------ the Entry Point -----------------------------------------
+// ---Entry Point---------------------
 #include "Reazi/EntryPoint.h"
-//----------------------------------------------------------------------------
+// -----------------------------------

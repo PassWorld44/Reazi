@@ -2,21 +2,18 @@
 
 #include "Core.h"
 
-namespace Reazi
-{
+namespace Reazi {
 
 	class REAZI_API Application
 	{
-	private:
-
 	public:
 		Application();
 		virtual ~Application();
 
-		void run();
+		void Run();
 	};
 
-	//To be defined in Client
+	// To be defined in CLIENT
 	Application* CreateApplication();
 
 }
