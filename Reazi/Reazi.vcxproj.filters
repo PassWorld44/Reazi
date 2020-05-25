@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Reazi">
+      <UniqueIdentifier>{80E8030E-ECFC-2BBF-B57E-CF1E215228F0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\Reazi.h" />
+    <ClInclude Include="src\Reazi\Application.h">
+      <Filter>Reazi</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Reazi\Core.h">
+      <Filter>Reazi</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Reazi\EntryPoint.h">
+      <Filter>Reazi</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Reazi\Log.h">
+      <Filter>Reazi</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\Reazi\Application.cpp">
+      <Filter>Reazi</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Reazi\Log.cpp">
+      <Filter>Reazi</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
