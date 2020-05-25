@@ -10,3 +10,5 @@
 #else
 	#error Reazi only support Windaube (yep, that's sad)
 #endif
+
+#define BIT(x) (1 << x)

@@ -19,6 +19,10 @@
     <ClInclude Include="src\Reazi\Log.h">
       <Filter>Reazi</Filter>
     </ClInclude>
+    <ClInclude Include="src\Reazi\events\event.h" />
+    <ClInclude Include="src\Reazi\events\MouseEvent.h" />
+    <ClInclude Include="src\Reazi\events\KeyEvent.h" />
+    <ClInclude Include="src\Reazi\events\ApplicationEvent.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Reazi\Application.cpp">

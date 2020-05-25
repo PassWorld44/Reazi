@@ -147,6 +147,10 @@
     <ClInclude Include="src\Reazi\Application.h" />
     <ClInclude Include="src\Reazi\Core.h" />
     <ClInclude Include="src\Reazi\EntryPoint.h" />
+    <ClInclude Include="src\Reazi\events\ApplicationEvent.h" />
+    <ClInclude Include="src\Reazi\events\event.h" />
+    <ClInclude Include="src\Reazi\events\KeyEvent.h" />
+    <ClInclude Include="src\Reazi\events\MouseEvent.h" />
     <ClInclude Include="src\Reazi\Log.h" />
   </ItemGroup>
   <ItemGroup>
