@@ -20,11 +20,11 @@ project "Reazi"
 
 	files
 	{
-		"%{prj.name}/src/**.h"
+		"%{prj.name}/src/**.h",
 		"%{prj.name}/src/**.cpp"
 	}
 
-	include
+	includedirs
 	{
 		"%{prj.name}/vendor/spdlog/include"
 	}
@@ -32,18 +32,18 @@ project "Reazi"
 	filter "system:windows"
 		cppdialect "C++17"
 		staticruntime "On"
-		systemvertion "latest"
+		systemversion "latest"
 
-		define
+		defines
 		{
-			"RZ_PLATFORM_WINDOWS"
-			"RZ_BUILD_DLL"
+			"RZ_PLATFORM_WINDOWS",
+			"RZ_BUILD_DLL",
 			"_WINDLL"
 		}
 
-		postbuilcommands
+		postbuildcommands
 		{
-			("{COPY} %{cfg.buildtarget.relpath} ../bin/" ..outputdir.. "/Sandbox")
+			("{COPY} %{cfg.buildtarget.relpath} ../bin/" .. outputdir .. "/Sandbox")
 		}
 
 	filter "configurations:Debug"
@@ -68,13 +68,13 @@ project "Sandbox"
 
 	files
 	{
-		"%{prj.name}/src/**.h"
+		"%{prj.name}/src/**.h",
 		"%{prj.name}/src/**.cpp"
 	}
 
-	include
+	includedirs
 	{
-		"%{prj.name}/vendor/spdlog/include"
+		"Reazi/vendor/spdlog/include",
 		"Reazi/src" 
 	}
 
@@ -86,9 +86,9 @@ project "Sandbox"
 	filter "system:windows"
 		cppdialect "C++17"
 		staticruntime "On"
-		systemvertion "latest"
+		systemversion "latest"
 
-		define
+		defines
 		{
 			"RZ_PLATFORM_WINDOWS"
 		}
@@ -102,5 +102,5 @@ project "Sandbox"
 		optimize "On"
 
 	filter "configurations:Dist"
-		defines "RZ_DISTG"
+		defines "RZ_DIST"
 		optimize "On"
