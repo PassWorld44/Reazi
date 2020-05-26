@@ -27,6 +27,7 @@ project "Reazi"
 	includedirs
 	{
 		"%{prj.name}/vendor/spdlog/include"
+		"%{prj.name}/src"
 	}
 
 	filter "system:windows"
@@ -74,7 +75,7 @@ project "Sandbox"
 
 	includedirs
 	{
-		"Reazi/vendor/spdlog/include",
+		"Reazi/vendor/spdlog/include", --To be changed if the name of the 1rst project is modified
 		"Reazi/src" 
 	}
 

@@ -55,4 +55,39 @@ namespace Reazi
 		}
 
 	};
+
+	class REAZI_API EventDispatcher
+	{
+	private:
+		template<typename T>
+		using EventFn = std::function<bool(T&)>;
+
+		Event& m_event;
+
+	public:
+		EventDispatcher(Event& event) : m_event(event) {}
+
+		template<typename T>
+		bool dispatch(EventFn<bool> func)
+		{
+			if (m_event.getEventType() == T::getStaticType())
+			{
+				m_event.m_handled = func(*(T*)&m_event); //run the function with m_event as T
+				return true;
+			}
+			return false;
+		}
+
+	};
+
+	std::ostream& operator<<(std::ostream& os, Event& e)
+	{
+		return os << e.to_string();
+	}
+
+	/*
+	std::basic_ostream<char>& operator<<(std::basic_ostream<char> os, Event& e)
+	{
+		return os << e.to_string();
+	} */
 }

@@ -2,6 +2,10 @@
 
 #include "Core.h"
 
+#include "events/Event.h"
+#include "events/ApplicationEvent.h"
+#include "Log.h"
+
 namespace Reazi {
 
 	class REAZI_API Application
