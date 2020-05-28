@@ -5,6 +5,7 @@
 #include "events/Event.h"
 #include "events/ApplicationEvent.h"
 #include "Log.h"
+#include "rzpch.h"
 
 namespace Reazi {
 

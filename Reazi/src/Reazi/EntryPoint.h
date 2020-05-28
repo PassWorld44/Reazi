@@ -1,6 +1,8 @@
 #pragma once
 
-#include <exception>
+#include "rzpch.h"
+//dependencies :
+// exception
 
 #ifdef RZ_PLATFORM_WINDOWS
 

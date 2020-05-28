@@ -2,8 +2,11 @@
 
 #include "../Core.h"
 
-#include <string>
-#include <functional>
+#include "rzpch.h"
+//dependencies :
+// string
+// functional
+// iostream
 
 namespace Reazi
 {

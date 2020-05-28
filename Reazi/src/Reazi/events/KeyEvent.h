@@ -2,7 +2,10 @@
 
 #include "Event.h"
 
-#include <sstream>
+#include "rzpch.h"
+//dependencies :
+// string
+// sstream
 
 namespace Reazi
 {

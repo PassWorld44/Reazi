@@ -1,3 +1,4 @@
+#include "rzpch.h"
 #include "Application.h"
 #include <spdlog/fmt/ostr.h>
 

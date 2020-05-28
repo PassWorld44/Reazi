@@ -1,6 +1,8 @@
 #pragma once
 
-#include <memory>
+#include "rzpch.h"
+//dependencies :
+// memory
 
 #include "Core.h"
 #include "spdlog/spdlog.h"

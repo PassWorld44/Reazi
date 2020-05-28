@@ -19,6 +19,10 @@ project "Reazi"
 	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
 	objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
 
+	pchheader "rzpch.h"
+	pchsource "%{prj.name}/src/rzpch.cpp"
+
+
 	files
 	{
 		"%{prj.name}/src/**.h",
