@@ -1,5 +1,6 @@
 workspace "Reazi"
-	architecture "x64"
+	architecture "x86"
+	startproject "Sandbox"
 
 	configurations
 	{
@@ -26,7 +27,7 @@ project "Reazi"
 
 	includedirs
 	{
-		"%{prj.name}/vendor/spdlog/include"
+		"%{prj.name}/vendor/spdlog/include",
 		"%{prj.name}/src"
 	}
 

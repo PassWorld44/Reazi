@@ -3,6 +3,7 @@
 #include "event.h"
 
 #include <sstream>
+#include <iostream>
 
 namespace Reazi
 {

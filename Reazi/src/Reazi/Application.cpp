@@ -1,4 +1,5 @@
 #include "Application.h"
+#include <spdlog/fmt/ostr.h>
 
 namespace Reazi
 {
@@ -12,7 +13,7 @@ namespace Reazi
 
 	void Application::Run()
 	{
-		WindowsResizeEvent e(1280, 720);
+		WindowsResizeEvent e(1729, 842);
 		if (e.isInCategory(EventCategory::EventCategoryApp))
 		{
 			HZ_TRACE(e);

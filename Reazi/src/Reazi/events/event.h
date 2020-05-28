@@ -80,14 +80,8 @@ namespace Reazi
 
 	};
 
-	std::ostream& operator<<(std::ostream& os, Event& e)
+	inline std::ostream& operator<<(std::ostream& os, const Event& e)
 	{
 		return os << e.to_string();
 	}
-
-	/*
-	std::basic_ostream<char>& operator<<(std::basic_ostream<char> os, Event& e)
-	{
-		return os << e.to_string();
-	} */
 }
