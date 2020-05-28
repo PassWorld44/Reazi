@@ -11,6 +11,12 @@ workspace "Reazi"
 
 outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
+-- Includes directories relative to root folder (solution directory)
+IncludeDir = {}
+IncludeDir["GLFW"] = "Reazi/vendor/GLFW/include"
+
+include "Reazi/vendor/GLFW" -- including the premake file
+
 project "Reazi"
 	location "Reazi"
 	kind "SharedLib"
@@ -32,7 +38,14 @@ project "Reazi"
 	includedirs
 	{
 		"%{prj.name}/vendor/spdlog/include",
-		"%{prj.name}/src"
+		"%{prj.name}/src",
+		"%{IncludeDir.GLFW}"
+	}
+
+	links
+	{
+		"GLFW",
+		"opengl32.lib"
 	}
 
 	filter "system:windows"

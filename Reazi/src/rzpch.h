@@ -13,6 +13,8 @@
 #include <unordered_map>
 #include <unordered_set>
 
+#include "Reazi/Log.h"
+
 #ifdef RZ_PLATFORM_WINDOWS
 	#include <windows.h>
 #endif
