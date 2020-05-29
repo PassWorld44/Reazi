@@ -4,8 +4,10 @@
 
 #include "events/Event.h"
 #include "events/ApplicationEvent.h"
+#include "Window.h"
 #include "Log.h"
 #include "rzpch.h"
+
 
 namespace Reazi {
 
@@ -16,6 +18,9 @@ namespace Reazi {
 		virtual ~Application();
 
 		void Run();
+	private:
+		std::unique_ptr<Window> m_window;
+		bool m_runnig = true;
 	};
 
 	// To be defined in CLIENT

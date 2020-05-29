@@ -1,11 +1,13 @@
 #include "rzpch.h"
 #include "Application.h"
 #include <spdlog/fmt/ostr.h>
+#include <GLFW/glfw3.h>
 
 namespace Reazi
 {
 	Application::Application()
 	{
+		m_window = std::unique_ptr<Window>(Window::create());
 	}
 
 	Application::~Application()
@@ -14,20 +16,11 @@ namespace Reazi
 
 	void Application::Run()
 	{
-		WindowsResizeEvent e(1729, 842);
-		if (e.isInCategory(EventCategory::EventCategoryApp))
+		while (m_runnig)
 		{
-			HZ_TRACE(e);
-		}
-		if (e.isInCategory(EventCategory::EventCategoryInput))
-		{
-			HZ_TRACE(e);
-		}
-
-		bool stop = false;
-		while (!stop)
-		{
-
+			glClearColor(1, 0, 1, 1);
+			glClear(GL_COLOR_BUFFER_BIT);
+			m_window->onUpdate();
 		}
 	}
 }
