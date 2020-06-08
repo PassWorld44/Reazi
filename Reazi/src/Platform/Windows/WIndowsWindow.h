@@ -3,6 +3,10 @@
 #include "Reazi/Window.h"
 #include "GLFW/glfw3.h"
 
+#include "Reazi/events/ApplicationEvent.h"
+#include "Reazi/events/MouseEvent.h"
+#include "Reazi/events/KeyEvent.h"
+
 namespace Reazi
 {
 	class WindowsWindow : public Window

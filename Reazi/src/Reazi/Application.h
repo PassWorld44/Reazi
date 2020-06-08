@@ -18,7 +18,11 @@ namespace Reazi {
 		virtual ~Application();
 
 		void Run();
+
+		void onEvent(Event& e);
 	private:
+		bool OnWindowClose(WindowsClosedEvent& e);
+
 		std::unique_ptr<Window> m_window;
 		bool m_runnig = true;
 	};

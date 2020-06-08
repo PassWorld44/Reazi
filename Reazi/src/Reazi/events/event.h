@@ -71,7 +71,7 @@ namespace Reazi
 		EventDispatcher(Event& event) : m_event(event) {}
 
 		template<typename T>
-		bool dispatch(EventFn<bool> func)
+		bool dispatch(EventFn<T> func)
 		{
 			if (m_event.getEventType() == T::getStaticType())
 			{
