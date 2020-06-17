@@ -51,11 +51,14 @@ namespace Reazi
 		virtual const char* getName() const = 0;
 		virtual int getCategoryFlags() const = 0;
 		virtual std::string to_string() const { return getName(); }
+		inline std::string ToString() const { return to_string(); }
 
 		inline bool isInCategory(EventCategory category)
 		{
 			return (int)getCategoryFlags() & (int)category;
 		}
+
+		inline bool isHandled() const { return m_handled; }
 
 	};
 

@@ -24,15 +24,15 @@ namespace Reazi {
 }
 
 // Core log macros
-#define HZ_CORE_TRACE(...)    ::Reazi::Log::GetCoreLogger()->trace(__VA_ARGS__)
-#define HZ_CORE_INFO(...)     ::Reazi::Log::GetCoreLogger()->info(__VA_ARGS__)
-#define HZ_CORE_WARN(...)     ::Reazi::Log::GetCoreLogger()->warn(__VA_ARGS__)
-#define HZ_CORE_ERROR(...)    ::Reazi::Log::GetCoreLogger()->error(__VA_ARGS__)
-#define HZ_CORE_FATAL(...)    ::Reazi::Log::GetCoreLogger()->fatal(__VA_ARGS__)
+#define RZ_CORE_TRACE(...)    ::Reazi::Log::GetCoreLogger()->trace(__VA_ARGS__)
+#define RZ_CORE_INFO(...)     ::Reazi::Log::GetCoreLogger()->info(__VA_ARGS__)
+#define RZ_CORE_WARN(...)     ::Reazi::Log::GetCoreLogger()->warn(__VA_ARGS__)
+#define RZ_CORE_ERROR(...)    ::Reazi::Log::GetCoreLogger()->error(__VA_ARGS__)
+#define RZ_CORE_FATAL(...)    ::Reazi::Log::GetCoreLogger()->fatal(__VA_ARGS__)
 
 // Client log macros
-#define HZ_TRACE(...)	      ::Reazi::Log::GetClientLogger()->trace(__VA_ARGS__)
-#define HZ_INFO(...)	      ::Reazi::Log::GetClientLogger()->info(__VA_ARGS__)
-#define HZ_WARN(...)	      ::Reazi::Log::GetClientLogger()->warn(__VA_ARGS__)
-#define HZ_ERROR(...)	      ::Reazi::Log::GetClientLogger()->error(__VA_ARGS__)
-#define HZ_FATAL(...)	      ::Reazi::Log::GetClientLogger()->fatal(__VA_ARGS__)
+#define RZ_TRACE(...)	      ::Reazi::Log::GetClientLogger()->trace(__VA_ARGS__)
+#define RZ_INFO(...)	      ::Reazi::Log::GetClientLogger()->info(__VA_ARGS__)
+#define RZ_WARN(...)	      ::Reazi::Log::GetClientLogger()->warn(__VA_ARGS__)
+#define RZ_ERROR(...)	      ::Reazi::Log::GetClientLogger()->error(__VA_ARGS__)
+#define RZ_FATAL(...)	      ::Reazi::Log::GetClientLogger()->fatal(__VA_ARGS__)

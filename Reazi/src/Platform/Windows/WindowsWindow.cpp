@@ -6,7 +6,7 @@ namespace Reazi
 {
 	static void GLFWErrorCallBack(int error, const char* description)
 	{
-		HZ_CORE_ERROR("GLFW error : ({0}) {1}", error, description);
+		RZ_CORE_ERROR("GLFW error : ({0}) {1}", error, description);
 	}
 
 	Window* Window::create(const WindowProps& props)
@@ -51,7 +51,7 @@ namespace Reazi
 		m_data.height = props.height;
 		m_data.width = props.width;
 
-		HZ_CORE_INFO("Creating WindowsWIndow {0} ({1}, {2})", m_data.title, m_data.width, m_data.height);
+		RZ_CORE_INFO("Creating WindowsWIndow {0} ({1}, {2})", m_data.title, m_data.width, m_data.height);
 
 		static bool s_glfwInit = false;
 
@@ -77,7 +77,7 @@ namespace Reazi
 			data.width = width;
 			data.height = height;
 			
-			WindowsResizeEvent event(width, height);
+			WindowsResizeEvent event((float)width, (float)height);
 			data.eventCallback(event);
 		});
 

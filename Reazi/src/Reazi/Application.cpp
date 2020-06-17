@@ -25,16 +25,43 @@ namespace Reazi
 			glClearColor(1, 0, 1, 1);
 			glClear(GL_COLOR_BUFFER_BIT);
 			m_window->onUpdate();
+
+			for (Layer* layer : m_layerStack)
+			{
+				layer->onUpdate();
+			}
 		}
 	}
+
 	void Application::onEvent(Event& e)
 	{
 		EventDispatcher dispatcher(e);
 		dispatcher.dispatch<WindowsClosedEvent>(BIND_EVENT_FN(Application::OnWindowClose));
 
-		HZ_CORE_TRACE("{0}", e);
+		RZ_TRACE("{0}", e);
 
+		for (auto it = m_layerStack.end(); it != m_layerStack.begin();)
+		{
+			(*--it)->onEvent(e);
+
+			if (e.isHandled()) 
+			//then this is the layer witch has handel the event
+			{
+				break;
+			}
+		}
 	}
+
+	void Application::pushLayer(Layer* layer)
+	{
+		m_layerStack.pushLayer(layer);
+	}
+
+	void Application::pushOverlay(Layer* overlay)
+	{
+		m_layerStack.pushLayer(overlay);
+	}
+
 	bool Application::OnWindowClose(WindowsClosedEvent& e)
 	{
 		m_runnig = false;

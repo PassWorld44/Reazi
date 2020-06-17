@@ -16,7 +16,8 @@ namespace Reazi
 		float m_x, m_y;
 	public:
 
-		MouseMovedEvent(int x, int y) : m_x(x), m_y(y) {}
+		MouseMovedEvent(float x, float y) 
+			: m_x(x), m_y(y) {}
 		
 		inline float getX() { return m_x; }
 		inline float getY() { return m_y; }
@@ -38,7 +39,8 @@ namespace Reazi
 		float m_xOffest, m_yOffset;
 	public:
 
-		MouseScolledEvent(int x, int y) : m_xOffest(x), m_yOffset(y) {}
+		MouseScolledEvent(float x, float y) 
+			: m_xOffest(x), m_yOffset(y) {}
 
 		inline float getXOffset() { return m_xOffest; }
 		inline float getY() { return m_yOffset; }
@@ -62,7 +64,7 @@ namespace Reazi
 
 		MouseButtonEvent(int button) : m_button(button) {}
 
-		inline float getButton() { return m_button; }
+		inline int getButton() { return m_button; }
 
 		std::string to_string() const override
 		{
