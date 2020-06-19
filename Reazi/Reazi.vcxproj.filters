@@ -1,11 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
+    <Filter Include="Platform">
+      <UniqueIdentifier>{2AC788B4-1694-E3BF-3FAD-D1672BD9184E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Platform\Windows">
+      <UniqueIdentifier>{64FBD71A-50F4-F66C-7926-DCF1657ED678}</UniqueIdentifier>
+    </Filter>
     <Filter Include="Reazi">
       <UniqueIdentifier>{80E8030E-ECFC-2BBF-B57E-CF1E215228F0}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Reazi\events">
+      <UniqueIdentifier>{841894AC-707B-2351-1901-5C070543EFD3}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\Platform\Windows\WIndowsWindow.h">
+      <Filter>Platform\Windows</Filter>
+    </ClInclude>
     <ClInclude Include="src\Reazi.h" />
     <ClInclude Include="src\Reazi\Application.h">
       <Filter>Reazi</Filter>
@@ -16,20 +28,48 @@
     <ClInclude Include="src\Reazi\EntryPoint.h">
       <Filter>Reazi</Filter>
     </ClInclude>
+    <ClInclude Include="src\Reazi\Layer.h">
+      <Filter>Reazi</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Reazi\LayerStack.h">
+      <Filter>Reazi</Filter>
+    </ClInclude>
     <ClInclude Include="src\Reazi\Log.h">
       <Filter>Reazi</Filter>
     </ClInclude>
-    <ClInclude Include="src\Reazi\events\event.h" />
-    <ClInclude Include="src\Reazi\events\MouseEvent.h" />
-    <ClInclude Include="src\Reazi\events\KeyEvent.h" />
-    <ClInclude Include="src\Reazi\events\ApplicationEvent.h" />
+    <ClInclude Include="src\Reazi\Window.h">
+      <Filter>Reazi</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Reazi\events\ApplicationEvent.h">
+      <Filter>Reazi\events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Reazi\events\KeyEvent.h">
+      <Filter>Reazi\events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Reazi\events\MouseEvent.h">
+      <Filter>Reazi\events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Reazi\events\event.h">
+      <Filter>Reazi\events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\rzpch.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\Platform\Windows\WindowsWindow.cpp">
+      <Filter>Platform\Windows</Filter>
+    </ClCompile>
     <ClCompile Include="src\Reazi\Application.cpp">
+      <Filter>Reazi</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Reazi\Layer.cpp">
+      <Filter>Reazi</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Reazi\LayerStack.cpp">
       <Filter>Reazi</Filter>
     </ClCompile>
     <ClCompile Include="src\Reazi\Log.cpp">
       <Filter>Reazi</Filter>
     </ClCompile>
+    <ClCompile Include="src\rzpch.cpp" />
   </ItemGroup>
 </Project>

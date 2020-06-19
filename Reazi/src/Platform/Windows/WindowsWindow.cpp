@@ -2,6 +2,7 @@
 #include "WIndowsWindow.h"
 #include "Reazi/Core.h"
 
+
 namespace Reazi
 {
 	static void GLFWErrorCallBack(int error, const char* description)
@@ -66,6 +67,9 @@ namespace Reazi
 
 		m_window = glfwCreateWindow(m_data.width, m_data.height, m_data.title.c_str(), nullptr, nullptr);
 		glfwMakeContextCurrent(m_window);
+		int status = gladLoadGLLoader((GLADloadproc)glfwGetProcAddress);
+		RZ_CORE_ASSERT(status, "failed to initialise GLAD !");
+
 		glfwSetWindowUserPointer(m_window, &m_data);
 		setVSync(true);
 

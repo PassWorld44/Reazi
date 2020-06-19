@@ -14,8 +14,10 @@ outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 -- Includes directories relative to root folder (solution directory)
 IncludeDir = {}
 IncludeDir["GLFW"] = "Reazi/vendor/GLFW/include"
+IncludeDir["Glad"] = "Reazi/vendor/Glad/include"
 
 include "Reazi/vendor/GLFW" -- including the premake file
+include "Reazi/vendor/Glad"
 
 project "Reazi"
 	location "Reazi"
@@ -39,12 +41,14 @@ project "Reazi"
 	{
 		"%{prj.name}/vendor/spdlog/include",
 		"%{prj.name}/src",
-		"%{IncludeDir.GLFW}"
+		"%{IncludeDir.GLFW}",
+		"%{IncludeDir.Glad}"
 	}
 
 	links
 	{
 		"GLFW",
+		"Glad",
 		"opengl32.lib"
 	}
 

@@ -1,6 +1,7 @@
 #pragma once
 
 #include "Reazi/Window.h"
+#include "glad/glad.h"
 #include "GLFW/glfw3.h"
 
 #include "Reazi/events/ApplicationEvent.h"

@@ -1,0 +1,2 @@
+C:\cygwin\dev\Reazi\Reazi\vendor\Glad\bin\Debug-windows-x86\Glad\Glad.pdb
+C:\cygwin\dev\Reazi\Reazi\vendor\Glad\bin-int\Debug-windows-x86\Glad\Glad.pdb

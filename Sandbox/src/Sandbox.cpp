@@ -27,6 +27,7 @@ public:
 	Sandbox()
 	{
 		pushLayer(new ExampleLayer());
+		RZ_TRACE("App Created !");
 	}
 
 	~Sandbox()

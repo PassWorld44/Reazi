@@ -36,8 +36,8 @@ TARGETDIR = ../bin/Debug-windows-x86/Sandbox
 TARGET = $(TARGETDIR)/Sandbox.exe
 OBJDIR = ../bin-int/Debug-windows-x86/Sandbox
 DEFINES += -DRZ_PLATFORM_WINDOWS -DRZ_DEBUG
-ALL_CFLAGS += $(CFLAGS) $(ALL_CPPFLAGS) -m32 -g
-ALL_CXXFLAGS += $(CXXFLAGS) $(ALL_CPPFLAGS) -m32 -g -std=c++17
+ALL_CFLAGS += $(CFLAGS) $(ALL_CPPFLAGS) -m32 -g /MDd
+ALL_CXXFLAGS += $(CXXFLAGS) $(ALL_CPPFLAGS) -m32 -g -std=c++17 /MDd
 LIBS += ../bin/Debug-windows-x86/Reazi/Reazi.lib
 LDDEPS += ../bin/Debug-windows-x86/Reazi/Reazi.lib
 ALL_LDFLAGS += $(LDFLAGS) -L/usr/lib32 -m32
@@ -47,8 +47,8 @@ TARGETDIR = ../bin/Release-windows-x86/Sandbox
 TARGET = $(TARGETDIR)/Sandbox.exe
 OBJDIR = ../bin-int/Release-windows-x86/Sandbox
 DEFINES += -DRZ_PLATFORM_WINDOWS -DRZ_RELEASE
-ALL_CFLAGS += $(CFLAGS) $(ALL_CPPFLAGS) -m32 -O2
-ALL_CXXFLAGS += $(CXXFLAGS) $(ALL_CPPFLAGS) -m32 -O2 -std=c++17
+ALL_CFLAGS += $(CFLAGS) $(ALL_CPPFLAGS) -m32 -O2 /MD
+ALL_CXXFLAGS += $(CXXFLAGS) $(ALL_CPPFLAGS) -m32 -O2 -std=c++17 /MD
 LIBS += ../bin/Release-windows-x86/Reazi/Reazi.lib
 LDDEPS += ../bin/Release-windows-x86/Reazi/Reazi.lib
 ALL_LDFLAGS += $(LDFLAGS) -L/usr/lib32 -m32 -s
@@ -58,8 +58,8 @@ TARGETDIR = ../bin/Dist-windows-x86/Sandbox
 TARGET = $(TARGETDIR)/Sandbox.exe
 OBJDIR = ../bin-int/Dist-windows-x86/Sandbox
 DEFINES += -DRZ_PLATFORM_WINDOWS -DRZ_DIST
-ALL_CFLAGS += $(CFLAGS) $(ALL_CPPFLAGS) -m32 -O2
-ALL_CXXFLAGS += $(CXXFLAGS) $(ALL_CPPFLAGS) -m32 -O2 -std=c++17
+ALL_CFLAGS += $(CFLAGS) $(ALL_CPPFLAGS) -m32 -O2 /MD
+ALL_CXXFLAGS += $(CXXFLAGS) $(ALL_CPPFLAGS) -m32 -O2 -std=c++17 /MD
 LIBS += ../bin/Dist-windows-x86/Reazi/Reazi.lib
 LDDEPS += ../bin/Dist-windows-x86/Reazi/Reazi.lib
 ALL_LDFLAGS += $(LDFLAGS) -L/usr/lib32 -m32 -s
