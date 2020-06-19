@@ -4,3 +4,6 @@
 [submodule "Reazi/vendor/GLFW"]
 	path = Reazi/vendor/GLFW
 	url = https://github.com/TheCherno/glfw.git
+[submodule "Reazi/vendor/imgui"]
+	path = Reazi/vendor/imgui
+	url = https://github.com/TheCherno/imgui

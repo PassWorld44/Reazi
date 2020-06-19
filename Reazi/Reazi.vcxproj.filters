@@ -4,17 +4,26 @@
     <Filter Include="Platform">
       <UniqueIdentifier>{2AC788B4-1694-E3BF-3FAD-D1672BD9184E}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Platform\OpenGL">
+      <UniqueIdentifier>{1E7D2C1D-8A08-9AE1-9319-1DD6FF23F6E1}</UniqueIdentifier>
+    </Filter>
     <Filter Include="Platform\Windows">
       <UniqueIdentifier>{64FBD71A-50F4-F66C-7926-DCF1657ED678}</UniqueIdentifier>
     </Filter>
     <Filter Include="Reazi">
       <UniqueIdentifier>{80E8030E-ECFC-2BBF-B57E-CF1E215228F0}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Reazi\ImGui">
+      <UniqueIdentifier>{AABD78FB-1673-F1F0-9F67-EBC70B1CE8F4}</UniqueIdentifier>
+    </Filter>
     <Filter Include="Reazi\events">
       <UniqueIdentifier>{841894AC-707B-2351-1901-5C070543EFD3}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\Platform\OpenGL\ImGuiOpenGLRenderer.h">
+      <Filter>Platform\OpenGL</Filter>
+    </ClInclude>
     <ClInclude Include="src\Platform\Windows\WIndowsWindow.h">
       <Filter>Platform\Windows</Filter>
     </ClInclude>
@@ -27,6 +36,9 @@
     </ClInclude>
     <ClInclude Include="src\Reazi\EntryPoint.h">
       <Filter>Reazi</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Reazi\ImGui\ImGuiLayer.h">
+      <Filter>Reazi\ImGui</Filter>
     </ClInclude>
     <ClInclude Include="src\Reazi\Layer.h">
       <Filter>Reazi</Filter>
@@ -55,11 +67,17 @@
     <ClInclude Include="src\rzpch.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\Platform\OpenGL\ImGuiOpenGLRenderer.cpp">
+      <Filter>Platform\OpenGL</Filter>
+    </ClCompile>
     <ClCompile Include="src\Platform\Windows\WindowsWindow.cpp">
       <Filter>Platform\Windows</Filter>
     </ClCompile>
     <ClCompile Include="src\Reazi\Application.cpp">
       <Filter>Reazi</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Reazi\ImGui\ImGuiLayer.cpp">
+      <Filter>Reazi\ImGui</Filter>
     </ClCompile>
     <ClCompile Include="src\Reazi\Layer.cpp">
       <Filter>Reazi</Filter>

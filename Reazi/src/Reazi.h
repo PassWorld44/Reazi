@@ -6,6 +6,7 @@
 #include "Reazi/Layer.h"
 #include "Reazi/Log.h"
 #include "Reazi/events/Event.h"
+#include "Reazi/ImGui/ImGuiLayer.h"
 
 // ---Entry Point---------------------
 #include "Reazi/EntryPoint.h"

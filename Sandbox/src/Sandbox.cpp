@@ -26,8 +26,9 @@ class Sandbox : public Reazi::Application
 public:
 	Sandbox()
 	{
-		pushLayer(new ExampleLayer());
 		RZ_TRACE("App Created !");
+		pushLayer(new ExampleLayer());
+		pushOverlay(new Reazi::ImGuiLayer());
 	}
 
 	~Sandbox()
